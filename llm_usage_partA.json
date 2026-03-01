@@ -1,0 +1,122 @@
+{
+  "student_metadata": {
+    "name": "Meenaksh Singhania",
+    "roll_number": "230040",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini 3.1 Deep Research",
+      "model": "Gemini 3.1 Flash",
+      "provider": "Google"
+    },
+    {
+      "tool_name": "ChatGPT Deep Research",
+      "model": "o1-preview",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini 3.1 Deep Research",
+      "model": "Gemini 3.1 Flash",
+      "purpose": "Initial identification of suitable research papers within the SVM, GMM, and Time Series syllabus units that satisfy the 2009-2012 and CORE A* constraints.",
+      "prompt": "Suggest research papers from 2009-2012 in SVM, GMM, or ARIMA that are reproducible on CPU and suitable for Advanced ML midsem.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped shortlist classical machine learning papers and guided focus toward Pegasos as a strong SVM-based methodological candidate.",
+      "student_verification": "I independently verified venue quality, publication year, and ensured the method belongs to classical SVM optimization.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini 3.1 Deep Research",
+      "model": "Gemini 3.1 Flash",
+      "purpose": "Detailed technical evaluation of the Pegasos paper for Parts B and C feasibility.",
+      "prompt": "Analyse the Pegasos paper deeply and check if it satisfies all Advanced ML midsem guidelines and is safe for reproduction and viva.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that Pegasos is computationally efficient, methodologically sound, and suitable for CPU-based reproduction using stochastic sub-gradient updates.",
+      "student_verification": "I reviewed the objective function, update rule, and experimental setup in the paper to confirm feasibility on a standard laptop.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini 3.1 Deep Research",
+      "model": "Gemini 3.1 Flash",
+      "purpose": "Strategic comparison of SVM, Gaussian Mixture Models, and ARIMA time-series options for exam risk minimization.",
+      "prompt": "Which topic would be easier for Part B and Part C among SVM, Gaussian Mixture Models, and ARIMA time series?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a comparative difficulty analysis that supported choosing Pegasos due to its clean optimization structure and manageable experimental pipeline.",
+      "student_verification": "I cross-checked expected implementation complexity and confirmed Pegasos can be implemented efficiently using Python and standard numerical libraries.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini 3.1 Deep Research",
+      "model": "Gemini 3.1 Flash",
+      "purpose": "Final compliance verification of publication details.",
+      "prompt": "Confirm the publication venue and year of the Pegasos journal version and whether it satisfies the 2009-2012 requirement.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Verified that the Mathematical Programming journal version (2011) meets the official exam constraints.",
+      "student_verification": "I manually checked the first page of the paper to confirm the journal name and publication year.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini 3.1 Deep Research",
+      "model": "Gemini 3.1 Flash",
+      "purpose": "Understanding practical limitations and experimental design considerations for the Pegasos algorithm.",
+      "prompt": "What are the key failure modes and sensitivity factors of the Pegasos SVM algorithm (such as the effect of lambda, non-separable data, and step-size schedule) that should be analyzed during reproduction?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped identify important diagnostic experiments including regularization sensitivity, convergence behavior, and robustness on non-separable datasets for deeper Part B analysis.",
+      "student_verification": "I cross-checked these factors with the algorithm discussion and experimental insights provided in the Pegasos paper.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 2,
+      "prompt": "Analyse the Pegasos paper deeply and check if it satisfies all Advanced ML midsem guidelines and is safe for reproduction and viva.",
+      "why_important": "This ensured the selected paper is fully compliant and practically feasible for Parts B and C."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 1,
+      "prompt": "Suggest research papers from 2009-2012 in SVM, GMM, or ARIMA that are reproducible on CPU and suitable for Advanced ML midsem.",
+      "why_important": "Helped restrict the search space to papers that satisfy the strict exam constraints."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "Which topic would be easier for Part B and Part C among SVM, Gaussian Mixture Models, and ARIMA time series?",
+      "why_important": "Supported the strategic decision to choose a lower-risk and more interpretable method."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "Confirm the publication venue and year of the Pegasos journal version and whether it satisfies the 2009-2012 requirement.",
+      "why_important": "Critical step to ensure formal compliance with Part A submission rules."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "What are the key failure modes and sensitivity factors of the Pegasos SVM algorithm (e.g., effect of lambda, non-separable data, and step-size schedule) that I should analyze during reproduction?",
+      "why_important": "This guided the design of diagnostic experiments and ensured deeper analysis of Pegasos behavior for Parts B and C."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Meenaksh Singhania",
+    "date": "2026-03-01"
+  }
+}
