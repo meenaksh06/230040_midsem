@@ -1,0 +1,54 @@
+{
+    "task": "Task 2.2",
+    "interactions": [
+        {
+            "task_tag": "Task 2.2",
+            "timestamp": "2026-03-06T23:35:00+05:30",
+            "prompt": "Help me debug why my Pegasos update step might cause weight norms to grow unboundedly.",
+            "response_summary": "LLM identified that the shrinkage factor (1 - 1/t) for t=1 gives 0, which resets w to 0 on the first step — this is correct by Algorithm 1 specification.",
+            "code_used_verbatim": false,
+            "student_modification": "I implemented the update step myself; used LLM only to sanity-check the t=1 edge case.",
+            "purpose": "Debugging an edge case in the implementation"
+        },
+        {
+            "task_tag": "Task 2.2",
+            "timestamp": "2026-03-06T23:38:00+05:30",
+            "prompt": "What is the correct numpy vector update for the Pegasos gradient step for a mini-batch of violated examples?",
+            "response_summary": "LLM showed how to vectorise the sum of y_i * x_i over violated examples using numpy broadcasting.",
+            "code_used_verbatim": true,
+            "student_modification": "Modified to handle the mini-batch size k in the denominator and adapted variable names to match my codebase.",
+            "purpose": "Efficient vectorised implementation of the gradient sum"
+        },
+        {
+            "task_tag": "Task 2.2",
+            "timestamp": "2026-03-06T23:42:00+05:30",
+            "prompt": "How do I plot the primal objective convergence curve using matplotlib in a clean format?",
+            "response_summary": "LLM provided a matplotlib template with grid, labels, and savefig.",
+            "code_used_verbatim": false,
+            "student_modification": "Rewrote with my own labels, title, and colour scheme.",
+            "purpose": "Generating the convergence visualisation"
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "prompt": "What is the correct numpy vector update for the Pegasos gradient step for a mini-batch of violated examples?",
+            "why_selected": "The vectorised gradient code was partially adapted from LLM response — most significant interaction"
+        },
+        {
+            "rank": 2,
+            "prompt": "Help me debug why my Pegasos update step might cause weight norms to grow unboundedly.",
+            "why_selected": "Used for debugging — revealed the t=1 initialisation edge case"
+        },
+        {
+            "rank": 3,
+            "prompt": "How do I plot the primal objective convergence curve using matplotlib in a clean format?",
+            "why_selected": "Used as a template starting point for the visualisation code"
+        }
+    ],
+    "student_verification": {
+        "declaration": "The Pegasos algorithm was implemented by me from scratch based on reading Algorithm 1 in the paper. LLM was used to help with numpy vectorisation syntax and debugging. All paper-to-code annotations in the markdown cells are my own analysis.",
+        "name": "Meenaksh Singhania",
+        "date": "2026-03-06"
+    }
+}
