@@ -1,0 +1,64 @@
+{
+    "task": "Task 2.3",
+    "interactions": [
+        {
+            "task_tag": "Task 2.3",
+            "prompt": "How do I create a seaborn confusion matrix with custom class labels and save it to a file?",
+            "response_summary": "LLM provided seaborn heatmap code with annot, fmt, and savefig.",
+            "code_used_verbatim": false,
+            "student_modification": "Rewrote with my own axis labels, title including accuracy, and custom colours.",
+            "purpose": "Creating the confusion matrix visualisation"
+        },
+        {
+            "task_tag": "Task 2.3",
+            "prompt": "What is a good justification for why my Pegasos test accuracy differs from the paper's reported numbers?",
+            "response_summary": "LLM suggested dataset domain change, size difference, and solver precision as reasons.",
+            "code_used_verbatim": false,
+            "student_modification": "Wrote my own 5-sentence explanation based on these ideas.",
+            "purpose": "Structuring the result gap explanation"
+        },
+        {
+            "task_tag": "Task 2.3",
+            "prompt": "How can I compare Pegasos performance to sklearn LinearSVC and plot the results?",
+            "response_summary": "LLM provided code to train LinearSVC, map lambda to sklearn's C parameter, and plot a side-by-side bar chart of accuracy and time.",
+            "code_used_verbatim": false,
+            "student_modification": "Adapted the plotting code to use my own colours, added titles, and added a specific interpretation text.",
+            "purpose": "Adding a reference baseline comparison"
+        },
+        {
+            "task_tag": "Task 2.3",
+            "prompt": "Generate code to sweep across lambda and mini-batch sizes (k) and plot the convergence curves and final accuracies with twin axes.",
+            "response_summary": "LLM wrote a loop to test multiple lambda and k values, and provided matplotlib code using twinx() to plot accuracy against primal objective.",
+            "code_used_verbatim": false,
+            "student_modification": "Modified the lambda/k ranges, applied my own formatting, and wrote custom interpretations linking the findings back to the Pegasos paper.",
+            "purpose": "Creating hyperparameter sweep visualisations"
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "prompt": "Generate code to sweep across lambda and mini-batch sizes (k) and plot the convergence curves and final accuracies with twin axes.",
+            "why_selected": "Generated the complex twin-axis plotting code for the hyperparameter sweeps."
+        },
+        {
+            "rank": 2,
+            "prompt": "How can I compare Pegasos performance to sklearn LinearSVC and plot the results?",
+            "why_selected": "Provided the critical mapping from Pegasos lambda to sklearn's C parameter."
+        },
+        {
+            "rank": 3,
+            "prompt": "How do I create a seaborn confusion matrix with custom class labels and save it to a file?",
+            "why_selected": "Used as reference for the confusion matrix visualisation code structure."
+        },
+        {
+            "rank": 4,
+            "prompt": "What is a good justification for why my Pegasos test accuracy differs from the paper's reported numbers?",
+            "why_selected": "Used as a starting point for the result gap analysis."
+        }
+    ],
+    "student_verification": {
+        "declaration": "Result analysis, hyperparameter sweep interpretations, and reproducibility checklist are entirely my own work. LLM used primarily for matplotlib/seaborn syntax reference.",
+        "name": "Meenaksh Singhania",
+        "date": "2026-03-08"
+    }
+}
