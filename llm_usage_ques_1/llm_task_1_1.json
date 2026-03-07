@@ -1,0 +1,38 @@
+{
+    "task": "Task 1.1",
+    "interactions": [
+        {
+            "task_tag": "Task 1.1",
+            "prompt": "Explain the Pegasos algorithm step by step from input to final output, referencing specific equations.",
+            "response_summary": "LLM provided a structured explanation of the Pegasos primal objective, mini-batch sampling, decaying learning rate, and projection step with equation references.",
+            "code_used_verbatim": false,
+            "student_modification": "N/A — no code in this task",
+            "purpose": "Drafting and structuring the step-by-step explanation of Pegasos for Task 1.1"
+        },
+        {
+            "task_tag": "Task 1.1",
+            "prompt": "What is the purpose of the projection step in Pegasos and which equation does it correspond to?",
+            "response_summary": "LLM explained Equation 4 and why the ball of radius 1/sqrt(lambda) contains the optimal solution.",
+            "code_used_verbatim": false,
+            "student_modification": "N/A",
+            "purpose": "Understanding the projection step before writing my own explanation"
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "prompt": "Explain the Pegasos algorithm step by step from input to final output, referencing specific equations.",
+            "why_selected": "Most central to the task — directly helped structure the step-by-step breakdown required"
+        },
+        {
+            "rank": 2,
+            "prompt": "What is the purpose of the projection step in Pegasos and which equation does it correspond to?",
+            "why_selected": "Helped clarify the role of Eq. 4, which I then wrote in my own words"
+        }
+    ],
+    "student_verification": {
+        "declaration": "I confirm that all answers in Task 1.1 were written by me in my own words. LLM was used for reading comprehension and clarification only. All step descriptions and references were verified against the original paper.",
+        "name": "Meenaksh Singhania",
+        "date": "2026-03-06"
+    }
+}
