@@ -1,0 +1,54 @@
+{
+    "task": "Task 1.2",
+    "interactions": [
+        {
+            "task_tag": "Task 1.2",
+            "timestamp": "2026-03-06T23:10:00+05:30",
+            "prompt": "What are the key assumptions that the Pegasos algorithm depends on that are specific to its architecture, not general ML assumptions?",
+            "response_summary": "LLM listed bounded feature norms, the L2 ball containment of w*, and i.i.d. mini-batch sampling as Pegasos-specific assumptions.",
+            "code_used_verbatim": false,
+            "student_modification": "N/A — no code in this task",
+            "purpose": "Brainstorming and validating assumptions before writing them in my own words"
+        },
+        {
+            "task_tag": "Task 1.2",
+            "timestamp": "2026-03-06T23:15:00+05:30",
+            "prompt": "What would be a realistic violation scenario for the bounded norm assumption in Pegasos?",
+            "response_summary": "LLM suggested unnormalised text bag-of-words as a violation scenario for the bounded norm assumption.",
+            "code_used_verbatim": false,
+            "student_modification": "N/A",
+            "purpose": "Getting ideas for realistic violation scenarios, which I then adapted"
+        },
+        {
+            "task_tag": "Task 1.2",
+            "timestamp": "2026-03-06T23:18:00+05:30",
+            "prompt": "Where in the Pegasos paper does the assumption about feature norm appear?",
+            "response_summary": "LLM pointed to Theorem 1 in Section 2 and the R bound in the convergence result.",
+            "code_used_verbatim": false,
+            "student_modification": "N/A",
+            "purpose": "Verifying paper references before citing them"
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "prompt": "What are the key assumptions that the Pegasos algorithm depends on that are specific to its architecture?",
+            "why_selected": "Core prompt for this task — helped identify which assumptions to focus on"
+        },
+        {
+            "rank": 2,
+            "prompt": "What would be a realistic violation scenario for the bounded norm assumption in Pegasos?",
+            "why_selected": "Directly contributed to the violation scenario I wrote for Assumption 1"
+        },
+        {
+            "rank": 3,
+            "prompt": "Where in the Pegasos paper does the assumption about feature norm appear?",
+            "why_selected": "Used to verify and confirm the paper reference section"
+        }
+    ],
+    "student_verification": {
+        "declaration": "All assumptions were identified by reading the paper myself. LLM was used to verify and brainstorm scenarios. All text written in my own words, all paper references verified against the original.",
+        "name": "Meenaksh Singhania",
+        "date": "2026-03-06"
+    }
+}
