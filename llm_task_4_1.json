@@ -1,0 +1,91 @@
+{
+    "student_metadata": {
+      "name": "Meenaksh Singhania",
+      "roll_number": "230039",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "task": "Task 4.1",
+      "submission_date": "2026-03-11"
+    },
+  
+    "llm_tools_used": [
+      {
+        "tool_name": "ChatGPT",
+        "model": "GPT-5",
+        "provider": "OpenAI"
+      }
+    ],
+  
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "tool_name": "ChatGPT",
+        "model": "GPT-5",
+        "task_tag": "Task 4.1",
+        "purpose": "Understanding how to structure the report summarizing the paper and experiments",
+        "prompt": "What sections should be included in a report summarizing a machine learning paper reproduction and experiments?",
+        "llm_response_used": "Partially",
+        "code_used_verbatim": false,
+        "student_modification": "The final report structure was written independently and adapted to match the assignment requirements.",
+        "how_it_helped": "Provided guidance on organizing sections such as paper summary, reproduction results, ablation studies, failure mode analysis, and reflection.",
+        "student_verification": "Ensured the report follows the required structure described in the assignment instructions.",
+        "confidence_level": 4
+      },
+      {
+        "interaction_id": 2,
+        "tool_name": "ChatGPT",
+        "model": "GPT-5",
+        "task_tag": "Task 4.1",
+        "purpose": "Improving clarity and wording of the paper summary",
+        "prompt": "Explain the main contribution of the Pegasos: Primal Estimated sub-GrAdient SOlver for SVM paper in simple terms.",
+        "llm_response_used": "Partially",
+        "code_used_verbatim": false,
+        "student_modification": "The explanation was rewritten in my own words and expanded to match the technical depth required in the report, emphasizing primal minimization instead of dual optimization.",
+        "how_it_helped": "Helped clarify the key idea behind Pegasos, including the L2-regularised hinge-loss objective, margin violators, and the decaying learning rate schedule.",
+        "student_verification": "Verified by reading the introduction and algorithm sections of the Pegasos paper.",
+        "confidence_level": 4
+      },
+      {
+        "interaction_id": 3,
+        "tool_name": "ChatGPT",
+        "model": "GPT-5",
+        "task_tag": "Task 4.1",
+        "purpose": "Improving explanation of experimental observations",
+        "prompt": "How should I explain the gap between reproduction results and the results reported in a machine learning paper?",
+        "llm_response_used": "Partially",
+        "code_used_verbatim": false,
+        "student_modification": "The explanation was written independently based on the reproduced results and dataset differences (Breast Cancer dataset vs paper's Reuters CCAT text dataset).",
+        "how_it_helped": "Provided guidance on explaining differences due to dataset size, hyperparameters, and simplified experimental setup.",
+        "student_verification": "Ensured the reasoning matches the actual experiments described in the report.",
+        "confidence_level": 4
+      }
+    ],
+  
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "What sections should be included in a machine learning reproduction report?",
+        "why_important": "Helped organize the structure of the Task 4.1 report."
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "Explain the main contribution of Pegasos: Primal Estimated sub-GrAdient SOlver for SVM.",
+        "why_important": "Helped clarify the core idea of the algorithm for the report summary."
+      },
+      {
+        "rank": 3,
+        "interaction_id": 3,
+        "prompt": "How should I explain the gap between reproduction results and paper results?",
+        "why_important": "Helped structure the explanation of experimental differences."
+      }
+    ],
+  
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 4.1 of Part B.",
+      "understanding_acknowledged": true,
+      "signature": "Meenaksh Singhania"
+    }
+  }

@@ -3,7 +3,6 @@
     "interactions": [
         {
             "task_tag": "Task 2.1",
-            "timestamp": "2026-03-06T23:30:00+05:30",
             "prompt": "Is the Breast Cancer Wisconsin dataset appropriate for testing a linear SVM like Pegasos?",
             "response_summary": "LLM confirmed that the dataset is a binary classification problem with numeric features suitable for linear SVM, and noted that StandardScaler + L2 normalisation is needed to satisfy Pegasos's bounded norm assumption.",
             "code_used_verbatim": false,
@@ -20,7 +19,6 @@
     ],
     "student_verification": {
         "declaration": "Dataset choice was my independent decision. LLM was consulted to validate the choice. Preprocessing steps and their connection to Pegasos assumptions were identified by me.",
-        "name": "Meenaksh Singhania",
-        "date": "2026-03-06"
+        "name": "Meenaksh Singhania"
     }
 }
